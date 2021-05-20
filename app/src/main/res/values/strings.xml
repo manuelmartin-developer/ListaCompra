@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Lista Compra</string>
+    <string name="anadirLista">Añadir a la Lista</string>
+    <string name="producto">Producto</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="precio">Precio</string>
+    <string name="titulo">LISTA DE LA COMPRA</string>
+    <string name="titulo2">VER PRODUCTO</string>
+    <string name="id">Id</string>
+    <string name="atras">ATRÁS</string>
+
+
+</resources>
