@@ -30,7 +30,9 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<Producto> productos = new ArrayList<>();
     ArrayAdapter<Producto> adaptador;
     Boolean borrarRegistro = false;
-    String id_detalle, producto_detalle, cantidad_detalle, precio_detalle;
+    String id_detalle, producto_detalle;
+    int cantidad_detalle;
+    float precio_detalle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,15 +59,15 @@ public class MainActivity extends AppCompatActivity {
                     Producto p = (Producto)parent.getItemAtPosition(position);
                     id_detalle = String.valueOf(p.getID());
                     producto_detalle = p.getProducto();
-                    cantidad_detalle = String.valueOf(p.getCantidad());
-                    precio_detalle = String.valueOf(p.getPrecio());
+                    cantidad_detalle = p.getCantidad();
+                    precio_detalle = p.getPrecio();
 
                     // Cargamos los datos a pasar
                     Bundle bundle = new Bundle();
                     bundle.putString("id", id_detalle);
                     bundle.putString("producto", producto_detalle);
-                    bundle.putString("cantidad", cantidad_detalle);
-                    bundle.putString("precio", precio_detalle);
+                    bundle.putInt("cantidad", cantidad_detalle);
+                    bundle.putFloat("precio", precio_detalle);
 
                     // Iniciamos la segunda Activity con los datos cargados
 

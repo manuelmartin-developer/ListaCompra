@@ -74,6 +74,7 @@
         android:contentDescription="precio"
         android:ems="10"
         android:inputType="number"
+        android:numeric="integer|decimal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/precio_textView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
